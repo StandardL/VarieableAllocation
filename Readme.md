@@ -3,17 +3,17 @@
 1. 在Release页面下载打包的软件并解压。
 2. 在Windows设置 - 隐私和安全性 - 开发者选项中，开启开发者模式。
 
-![image-20230413193444100](images\Setting_Dev.png)
+![image-20230413193444100](/images/Setting_Dev.png)
 
 3. 使用PowerShell安装本程序。
 
-   ![image-20230413193735249](images\Install_Powershell.png)
+   ![image-20230413193735249](/images/Install_Powershell.png)
 
    安装途中可能需要向您索取管理员权限，以安装来自作者的签名证书。
 
    当PowerShell终端出现如下字样时，表示已经安装成功，您可以在Windows开始菜单中启动或卸载。
 
-   ![image-20230413194015430](images\Install_Fin.png)
+   ![image-20230413194015430](/images/Install_Fin.png)
 
    
 
