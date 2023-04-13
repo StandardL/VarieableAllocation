@@ -1,0 +1,151 @@
+﻿<Page
+    x:Class="VarieableAllocation.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel>
+        <Grid x:Name="ContentArea">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="内存使用情况" />
+                    <Button
+                        x:Name="Refresh"
+                        Click="Refresh_Click"
+                        Content="&#xe72c;"
+                        FontFamily="{StaticResource SymbolThemeFontFamily}" />
+                </StackPanel>
+                <TextBlock
+                    x:Name="UsedPercentText"
+                    Margin="0,5,0,0"
+                    Style="{StaticResource BaseTextBlockStyle}" />
+                <ProgressBar
+                    x:Name="UsedProgressBar"
+                    Width="250"
+                    Height="25"
+                    IsIndeterminate="True" />
+
+                <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="细节总览" />
+                <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource BaseTextBlockStyle}" Text="总空间：" />
+                    <TextBlock
+                        x:Name="TotalSpaceText"
+                        Width="25"
+                        Margin="10,0,0,0"
+                        Style="{StaticResource BaseTextBlockStyle}" />
+                    <TextBlock
+                        Margin="10,0,0,0"
+                        Style="{StaticResource BaseTextBlockStyle}"
+                        Text="单位" />
+                </StackPanel>
+                <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource BaseTextBlockStyle}" Text="已使用：" />
+                    <TextBlock
+                        x:Name="UsedSpaceText"
+                        Width="25"
+                        Margin="10,0,0,0"
+                        Style="{StaticResource BaseTextBlockStyle}" />
+                    <TextBlock
+                        Margin="10,0,0,0"
+                        Style="{StaticResource BaseTextBlockStyle}"
+                        Text="单位" />
+                </StackPanel>
+                <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource BaseTextBlockStyle}" Text="未分配：" />
+                    <TextBlock
+                        x:Name="FreeSpaceText"
+                        Width="25"
+                        Margin="10,0,0,0"
+                        Style="{StaticResource BaseTextBlockStyle}" />
+                    <TextBlock
+                        Margin="10,0,0,0"
+                        Style="{StaticResource BaseTextBlockStyle}"
+                        Text="单位" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="30,0,0,0">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="进程编辑" />
+                    <Button
+                        x:Name="ClearTextbox"
+                        Margin="10,0,0,0"
+                        Click="ClearTextbox_Click"
+                        Content="清空"
+                        Style="{StaticResource AccentButtonStyle}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock
+                        Margin="0,5,0,0"
+                        FontSize="15"
+                        Style="{StaticResource BaseTextBlockStyle}"
+                        Text="进程名字" />
+                    <TextBox
+                        x:Name="AssignNameInput"
+                        Width="150"
+                        Margin="10,5,0,0"
+                        PlaceholderText="请输入进程名" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock
+                        Margin="0,5,0,0"
+                        FontSize="15"
+                        Style="{StaticResource BaseTextBlockStyle}"
+                        Text="所需内存" />
+                    <TextBox
+                        x:Name="AssignMemInput"
+                        Width="150"
+                        Margin="10,5,0,0"
+                        PlaceholderText="仅限数字" />
+                </StackPanel>
+                <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                    <Button
+                        x:Name="FirstFitButton"
+                        Margin="0,0,0,0"
+                        Click="FirstFitButton_Click"
+                        Content="最先适应分配算法" />
+                    <Button
+                        x:Name="DeleteButton"
+                        Margin="10,0,0,0"
+                        Click="DeleteButton_Click"
+                        Content="根据进程名删除" />
+                </StackPanel>
+                <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                    <Button
+                        x:Name="OptimalFitButton"
+                        Margin="0,0,0,0"
+                        Click="OptimalFitButton_Click"
+                        Content="最优适应分配算法" />
+                    <Button
+                        x:Name="WorstFitButton"
+                        Margin="10,0,0,0"
+                        Click="WorstFitButton_Click"
+                        Content="最坏适应分配算法" />
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <InfoBar
+            x:Name="MainInfoBar"
+            Title="欢迎"
+            Margin="0,10,0,0"
+            IsClosable="False"
+            IsOpen="True"
+            Message="程序初始化成功，请使用上方提供的功能。更多功能可以在左侧选项卡中选择。"
+            Severity="Informational" />
+
+        <TeachingTip
+            x:Name="RefreshTip"
+            Title="提示"
+            IsOpen="False"
+            Subtitle="点击此处以刷新内存分配的概览"
+            Target="{x:Bind Refresh}" />
+    </StackPanel>
+
+</Page>

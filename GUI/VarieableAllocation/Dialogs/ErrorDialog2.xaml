@@ -1,0 +1,19 @@
+﻿<!--  Copyright (c) Microsoft Corporation and Contributors.  -->
+<!--  Licensed under the MIT License.  -->
+
+<ContentDialog
+    x:Class="VarieableAllocation.Dialogs.ErrorDialog2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="ErrorDialog"
+    Title="错误"
+    CloseButtonStyle="{StaticResource AccentButtonStyle}"
+    CloseButtonText="关闭"
+    mc:Ignorable="d">
+
+    <StackPanel>
+        <TextBlock x:Name="MainText" Text="请确保进程名不为空或进程所需内存仅为数字！" />
+    </StackPanel>
+</ContentDialog>

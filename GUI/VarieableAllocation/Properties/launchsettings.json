@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "VarieableAllocation (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "VarieableAllocation (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
