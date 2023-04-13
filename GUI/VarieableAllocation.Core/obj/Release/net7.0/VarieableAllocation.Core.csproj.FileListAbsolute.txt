@@ -1,0 +1,12 @@
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\bin\Release\net7.0\VarieableAllocation.Core.deps.json
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\bin\Release\net7.0\VarieableAllocation.Core.dll
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\bin\Release\net7.0\VarieableAllocation.Core.pdb
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\obj\Release\net7.0\VarieableAllocation.Core.csproj.AssemblyReference.cache
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\obj\Release\net7.0\VarieableAllocation.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\obj\Release\net7.0\VarieableAllocation.Core.AssemblyInfoInputs.cache
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\obj\Release\net7.0\VarieableAllocation.Core.AssemblyInfo.cs
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\obj\Release\net7.0\VarieableAllocation.Core.csproj.CoreCompileInputs.cache
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\obj\Release\net7.0\VarieableAllocation.Core.dll
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\obj\Release\net7.0\refint\VarieableAllocation.Core.dll
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\obj\Release\net7.0\VarieableAllocation.Core.pdb
+D:\Coder\C# Source Files\Varieable_allocation_GUI\VarieableAllocation.Core\obj\Release\net7.0\ref\VarieableAllocation.Core.dll
