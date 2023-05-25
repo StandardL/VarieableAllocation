@@ -2,6 +2,7 @@
 
 1. 在Release页面下载打包的软件并解压。
 2. 在Windows设置 - 隐私和安全性 - 开发者选项中，开启开发者模式。
+3. 若您处于insider preview的Windows，且版本号Dev >= 23466，请在Windows设置 - 系统 - 开发者选项中，开启开发者模式。
 
 ![image-20230413193444100](/images/Setting_Dev.png)
 
